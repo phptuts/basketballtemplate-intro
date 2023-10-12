@@ -48,26 +48,42 @@
       </div>
     </nav>
     <div class="container">
-      <article class="text-center">
+      <div class="row">
+        <div class="col">
+          <h1>Create Game</h1>
+        </div>
+      </div>
+      <form action="">
         <div class="row">
           <div class="col">
-            <h1><a href="game.html">Game Title</a></h1>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <h2>Team A: 60</h2>
-            </div>
-            <div class="col-6 col">
-              <h2>Team B: 70</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <h2>1st Quater & Time: 9:43</h2>
-            </div>
+            <label for="game-name" class="form-label">Game Name</label>
+            <input type="text" id="game-name" class="form-control" />
           </div>
         </div>
-      </article>
+        <div class="row">
+          <div class="col">
+            <label for="home-team" class="form-label">Home Team</label>
+            <input type="text" id="home-team" class="form-control" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="away-team" class="form-label">Away Team</label>
+            <input type="text" id="away-team" class="form-control" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="start-date" class="form-label">Start Date</label>
+            <input type="datetime-local" id="start-date" class="form-control" />
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <button class="btn btn-primary w-100">Create Game</button>
+          </div>
+        </div>
+      </form>
     </div>
   </body>
 </html>
